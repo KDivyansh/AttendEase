@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629355004276",
+    "project_id": "attendease-c16dd",
+    "storage_bucket": "attendease-c16dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629355004276:android:7e7abf44fc5ca57505ec21",
+        "android_client_info": {
+          "package_name": "com.example.login_act"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtoSCEMV-ar-LgUec2OxUCKVJR1RcbLMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

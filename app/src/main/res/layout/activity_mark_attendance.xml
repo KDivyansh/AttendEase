@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="254dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/top_login" />
+
+            <TextView
+                android:id="@+id/markHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mark Attendance"
+                android:textAlignment="center"
+                android:textColor="#6C5DD2"
+                android:textSize="40dp"
+                android:textStyle="bold"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textSubjectLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Mark Attendance for:"
+                    android:textColor="#6C5DD2"
+                    android:textSize="18dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/markSubjectCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edit"
+                    android:ems="10"
+                    android:hint="Tap NFC Tag"
+                    android:inputType="textWebEmailAddress"
+                    android:padding="6dp"
+                    android:textColor="#707070"
+                    android:textColorHint="#808080" />
+
+
+
+                <Button
+                    android:id="@+id/markbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:padding="2dp"
+
+                    android:text="Mark"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
