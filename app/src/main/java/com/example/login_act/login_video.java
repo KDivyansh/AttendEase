@@ -25,7 +25,7 @@ public class login_video extends AppCompatActivity {
         //allow mediaController to control our videoView
 
         videoView.start();
-      final Handler handler = new Handler();
+        final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -139,13 +139,13 @@ public class MarkAttendance extends AppCompatActivity {
                 // Check timestamp range here
                 if ((hourOfDay == 9) ) {
                     if(((CurTime - latAccess)>600000)){
-                    user.setCS321(user.getCS321() + 1);
-                    user.setlatestAccess(CurTime);
-                    // Update the user's data in the database
-                    userRef.setValue(user);
-                    Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();}
+                        user.setCS321(user.getCS321() + 1);
+                        user.setlatestAccess(CurTime);
+                        // Update the user's data in the database
+                        userRef.setValue(user);
+                        Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();}
                     else{
-                        Toast.makeText(MarkAttendance.this, "Timeout! Please Try Again Later", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MarkAttendance.this, "Attendance marked Already for this session", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(MarkAttendance.this, "The Class isn't Scheduled at the moment", Toast.LENGTH_SHORT).show();
@@ -155,14 +155,14 @@ public class MarkAttendance extends AppCompatActivity {
                 // Check timestamp range here
                 if ((hourOfDay == 10)) {
                     if(((CurTime - latAccess)>600000)){
-                    user.setCS402(user.getCS402() + 1);
+                        user.setCS402(user.getCS402() + 1);
                         user.setlatestAccess(CurTime);
-                    // Update the user's data in the database
-                    userRef.setValue(user);
-                    Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
+                        // Update the user's data in the database
+                        userRef.setValue(user);
+                        Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
                     }
                     else{
-                        Toast.makeText(MarkAttendance.this, "Timeout! Please Try Again Later", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MarkAttendance.this, "Attendance marked Already for this session", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(MarkAttendance.this, "The Class isn't Scheduled at the moment", Toast.LENGTH_SHORT).show();
@@ -171,14 +171,14 @@ public class MarkAttendance extends AppCompatActivity {
             case "CS324":
                 if ((hourOfDay == 11)) {
                     if(((CurTime - latAccess)>600000)){
-                    user.setCS324(user.getCS324() + 1);
+                        user.setCS324(user.getCS324() + 1);
                         user.setlatestAccess(CurTime);
-                    // Update the user's data in the database
-                    userRef.setValue(user);
-                    Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
+                        // Update the user's data in the database
+                        userRef.setValue(user);
+                        Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
                     }
                     else{
-                        Toast.makeText(MarkAttendance.this, "Timeout! Please Try Again Later", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MarkAttendance.this, "Attendance marked Already for this session", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(MarkAttendance.this, "The Class isn't Scheduled at the moment", Toast.LENGTH_SHORT).show();
@@ -187,42 +187,46 @@ public class MarkAttendance extends AppCompatActivity {
             case "CMP608":
                 if ((hourOfDay == 12) ) {
                     if(((CurTime - latAccess)>600000)){
-                    user.setCMP608(user.getCMP608() + 1);
+                        user.setCMP608(user.getCMP608() + 1);
                         user.setlatestAccess(CurTime);
-                    // Update the user's data in the database
-                    userRef.setValue(user);
-                    Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
+                        // Update the user's data in the database
+                        userRef.setValue(user);
+                        Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
                     }
                     else{
-                        Toast.makeText(MarkAttendance.this, "Timeout! Please Try Again Later", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MarkAttendance.this, "Attendance marked Already for this session", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(MarkAttendance.this, "The Class isn't Scheduled at the moment", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case "CMP618":
-                if ((hourOfDay == 13) ) {
+                if ((hourOfDay == 11) ) {
                     if(((CurTime - latAccess)>600000)){
-                    user.setCMP618(user.getCMP618() + 1);
+                        user.setCMP618(user.getCMP618() + 1);
                         user.setlatestAccess(CurTime);
-                    // Update the user's data in the database
-                    userRef.setValue(user);
-                    Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
+                        // Update the user's data in the database
+                        userRef.setValue(user);
+                        Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
                     }
                     else{
-                        Toast.makeText(MarkAttendance.this, "Timeout! Please Try Again Later", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MarkAttendance.this, "Attendance marked Already for this session", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(MarkAttendance.this, "The Class isn't Scheduled at the moment", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case "PS315":
-                if ((hourOfDay == 19)  ) {
+                if ((hourOfDay == 13)  ) {
                     if(((CurTime - latAccess)>600000)){
-                    user.setPS315(user.getPS315() + 1);
-                    user.setlatestAccess(CurTime);}
+                        user.setPS315(user.getPS315() + 1);
+                        user.setlatestAccess(CurTime);
+                        // Update the user's data in the database
+                        userRef.setValue(user);
+                        Toast.makeText(MarkAttendance.this, "Attendance marked successfully", Toast.LENGTH_SHORT).show();
+                    }
                     else{
-                        Toast.makeText(MarkAttendance.this, "Timeout! Please Try Again Later", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MarkAttendance.this, "Attendance marked Already for this session", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(MarkAttendance.this, "The Class isn't Scheduled at the moment", Toast.LENGTH_SHORT).show();

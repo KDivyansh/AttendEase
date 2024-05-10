@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       Signup.setOnClickListener(new View.OnClickListener() {
+        Signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

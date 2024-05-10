@@ -41,7 +41,7 @@
                     android:layout_margin="5dp"
                     android:text="Time Table"
                     android:textAlignment="center"
-                    android:textColor="#6C5DD2"
+                    android:textColor="@color/darkViolet"
                     android:textSize="40dp"
                     android:textStyle="bold"
 
@@ -49,10 +49,350 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/timetable" />
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:stretchColumns="*"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <!-- Table Row - Headers -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/darkViolet"
+                        android:padding="8dp"
+                        android:text="Monday"
+                        android:background="@drawable/cell_shape"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="2:00pm - 3:00pm : CMP608 BDDV"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="3:00pm - 4:00pm : CS412 CV"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="4:00pm - 6:00pm : CMP609 BDDV Lab"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/darkViolet"
+                        android:padding="8dp"
+                        android:text="Tuesday"
+                        android:background="@drawable/cell_shape"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="2:00pm - 3:00pm : CS402 CD"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="4:00pm - 6:00pm : CS325 AI Lab"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/darkViolet"
+                        android:padding="8dp"
+                        android:text="Wednesday"
+                        android:background="@drawable/cell_shape"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="10:00am - 11:00am : CS412 CV"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="11:00am - 12:00pm : CMP608 BDDV"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="2:00pm - 3:00pm : CS402 CD"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="3:00am - 4:00pm : CS324 AI"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="4:00am - 6:00pm : CS403 CD Lab"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/darkViolet"
+                        android:padding="8dp"
+                        android:text="Thursday"
+                        android:background="@drawable/cell_shape"
+
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="10:00am - 12:00pm : CS413 CV Lab"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="12:00pm - 1:00pm : CS412 CV"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="2:00pm - 3:00pm : CS321 IS"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="3:00am - 4:00pm : CS324 AI"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/darkViolet"
+                        android:padding="8dp"
+                        android:text="Friday"
+                        android:background="@drawable/cell_shape"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="10:00am - 11:00pm : CMP608 BDDV"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="11:00am - 12:00pm : CS321 IS"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="2:00pm - 3:00pm : CS402 CD"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="3:00am - 4:00pm : CS324 AI"
+                        android:background="@drawable/cell_shape"
+                        android:textColor="@color/violet"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+
+
+                <!-- Table Rows - Data -->
+                <!-- Add rows dynamically from code based on user's attendance data -->
+
+            </TableLayout>
 
         </LinearLayout>
 
